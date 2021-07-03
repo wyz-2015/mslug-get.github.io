@@ -1,0 +1,15 @@
+site_name: Metal Slug 资源与帮助
+nav:
+  - base:
+    - 欢迎: index.md
+    - 关于: about.md
+  - 游戏roms:
+    - 暂用: roms/mslug.md
+  - 模拟器:
+    - Naomi/Atomisware:
+          - Flycast: emus/mslug6-flycast/mslug6.md
+    - Linux专区: 
+      - 软件获取: emus/linux/get.md
+theme: mkdocs
+repo_url: https://github.com/wyz-2015/mslug-get.github.io/
+# theme: readthedocs
