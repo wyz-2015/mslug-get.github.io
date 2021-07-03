@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>软件获取 - Metal Slug 资源与帮助</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Metal Slug 资源与帮助</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">base <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../..">欢迎</a>
+</li>
+                                    
+<li >
+    <a href="../../../about/">关于</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">游戏roms <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../roms/mslug/">暂用</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">模拟器 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Naomi/Atomisware</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../mslug6-flycast/mslug6/">Flycast</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Linux专区</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">软件获取</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../mslug6-flycast/mslug6/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/wyz-2015/mslug-get.github.io/edit/master/docs/emus/linux/get.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#linuxubuntu-arch-linux">Linux版模拟器获取(Ubuntu &amp; Arch Linux)</a></li>
+            <li><a href="#mame">MAME</a></li>
+            <li><a href="#flycast">Flycast</a></li>
+            <li><a href="#desmume">Desmume</a></li>
+            <li><a href="#ppssppsdl">PPSSPP(SDL)</a></li>
+            <li><a href="#mgba">mGBA</a></li>
+            <li><a href="#pcsxr">PCSXR</a></li>
+            <li><a href="#pcsx2">PCSX2</a></li>
+            <li><a href="#arch-linux">我是用Arch Linux的！</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="linuxubuntu-arch-linux">Linux版模拟器获取(Ubuntu &amp; Arch Linux)</h1>
+<p>主要介绍Ubuntu平台的模拟器。Arch系用户可浏览本页底部部分。(Arch都装成功了，想必计算机功力很不错了吧，还需要我的说明吗……)</p>
+<h2 id="mame">MAME</h2>
+<p>依次执行以下命令：</p>
+<pre><code>sudo add-apt-repository ppa:c.falco/mame
+sudo apt-get update
+sudo apt-get install mame
+</code></pre>
+
+<p>更新时间一般是官方版更新后的三四天后。<s>当然也有直接“翘班”，一整个月不更新的情况。</s></p>
+<h2 id="flycast">Flycast</h2>
+<p>作者没给出“deb”包，以自己编译为宜。</p>
+<h3 id="_1">编译安装</h3>
+<p>打开“<code>终端</code>”，切入合适的目录，执行：</p>
+<pre><code>git clone --recurse-submodules https://github.com/flyinghead/flycast.git
+cd flycast
+cmake ./
+</code></pre>
+
+<p>执行“<code>cmake ./</code>”一步时很可能会报错，一般都是缺包问题。可以在软件包管理器中寻找并补上这些包，这些包的名字一般都是像“<code>lib××××-dev</code>”这样的。补包后再次执行这一条命令，直到不报错，当前目录下出现“<code>Makefile</code>”文件为止。</p>
+<p>出现“<code>Makefile</code>”后不急着“<code>make</code>”。</p>
+<pre><code>cd shell/linux
+make
+sudo make install
+</code></pre>
+
+<p>看到程序菜单里出现“<code>Flycast</code>”时才算安装完成。</p>
+<h3 id="_2">更新</h3>
+<p>在<code>flycast</code>目录下：</p>
+<pre><code>git pull --recurse-submodules
+cd shell/linux
+make
+sudo make install
+</code></pre>
+
+<h2 id="desmume">Desmume</h2>
+<pre><code>sudo apt install desmume
+</code></pre>
+
+<h2 id="ppssppsdl">PPSSPP(SDL)</h2>
+<p>同样是编译安装、更新。过程操作可参考上方“<code>Flycast</code>”处。</p>
+<h3 id="_3">编译</h3>
+<ol>
+<li><code>git clone --recurse-submodules https://github.com/hrydgard/ppsspp.git</code></li>
+<li><code>cd ppsspp</code></li>
+<li><code>./b.sh</code></li>
+<li>根据报错提示补“dev”包。</li>
+<li><code>./b.sh</code>，若仍报错则返回<code>第4步</code>。</li>
+<li>编译出可执行文件后，<code>sudo make install</code>。</li>
+</ol>
+<h3 id="_4">更新</h3>
+<pre><code>git pull --recurse-submodules
+./b.sh
+sudo make install
+</code></pre>
+
+<h2 id="mgba">mGBA</h2>
+<p><code>VBA-M</code>画面不好，很暗，不推荐用。</p>
+<p><code>sudo apt install mgba-qt</code>或<code>sudo apt install mgba-sdl</code></p>
+<h2 id="pcsxr">PCSXR</h2>
+<pre><code>sudo apt install pcsxr
+</code></pre>
+
+<h2 id="pcsx2">PCSX2</h2>
+<pre><code>sudo dpkg --add-architecture i386
+sudo add-apt-repository ppa:pcsx2-team/pcsx2-daily
+sudo apt update
+sudo apt install pcsx2-unstable
+</code></pre>
+
+<h2 id="arch-linux">我是用Arch Linux的！</h2>
+<p>Arch下获取软件包实在是太方便了！这里就只列出软件包名了。</p>
+<ul>
+<li>mame</li>
+<li>desmume</li>
+<li>ppsspp</li>
+<li>pcsx2</li>
+<li>mgba</li>
+<li>pcsxr</li>
+<li>flycast-git<sup>AUR</sup></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
